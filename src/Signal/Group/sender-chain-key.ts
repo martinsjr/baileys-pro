@@ -1,4 +1,4 @@
-import { SenderMessageKey } from './sender_message_key';
+import { SenderMessageKey } from './sender-message-key';
 // import { HKDF } from './hkdf'; // caso precise futuramente
 import * as crypto from 'libsignal/src/crypto';
 

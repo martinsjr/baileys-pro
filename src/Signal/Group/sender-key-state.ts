@@ -1,8 +1,8 @@
-import { SenderChainKey } from './sender_chain_key';
-import { SenderMessageKey } from './sender_message_key';
+import { SenderChainKey } from './sender-chain-key';
+import { SenderMessageKey } from './sender-message-key';
 
-// Aqui é importante garantir que `protobufs` tenha tipagens adequadas
-// Se você tiver os `.proto` gerados com `protobufjs`, melhor ainda
+// Aqui ï¿½ importante garantir que `protobufs` tenha tipagens adequadas
+// Se vocï¿½ tiver os `.proto` gerados com `protobufjs`, melhor ainda
 import * as protobufs from './protobufs';
 
 export class SenderKeyState {

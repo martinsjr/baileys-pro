@@ -1,7 +1,7 @@
-import { SenderKeyDistributionMessage } from './sender_key_distribution_message';
+import { SenderKeyDistributionMessage } from './sender-key-distribution-message';
 import * as keyhelper from './keyhelper';
-import { SenderKeyRecord } from './sender_key_record';
-import { SenderKeyName } from './sender_key_name';
+import { SenderKeyRecord } from './sender-key-record';
+import { SenderKeyName } from './sender-key-name';
 
 export interface SenderKeyStore {
   loadSenderKey: (name: SenderKeyName) => Promise<SenderKeyRecord>;

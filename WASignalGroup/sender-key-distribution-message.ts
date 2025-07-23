@@ -1,4 +1,4 @@
-import { CiphertextMessage } from './ciphertext_message';
+import { CiphertextMessage } from './ciphertext-message';
 import * as protobufs from './protobufs';
 
 export class SenderKeyDistributionMessage extends CiphertextMessage {
@@ -53,7 +53,7 @@ export class SenderKeyDistributionMessage extends CiphertextMessage {
     }
   }
 
-  // Converte duas versões em um único byte como (major << 4 | minor)
+  // Converte duas versï¿½es em um ï¿½nico byte como (major << 4 | minor)
   private intsToByteHighAndLow(highValue: number, lowValue: number): number {
     return (((highValue << 4) | lowValue) & 0xff) % 256;
   }

@@ -1,4 +1,4 @@
-import { SenderKeyState } from './sender_key_state';
+import { SenderKeyState } from './sender-key-state';
 
 export class SenderKeyRecord {
   private readonly MAX_STATES = 5;

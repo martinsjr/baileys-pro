@@ -1,4 +1,4 @@
-import { CiphertextMessage } from './ciphertext_message';
+import { CiphertextMessage } from './ciphertext-message';
 import * as curve from 'libsignal/src/curve';
 import * as protobufs from './protobufs';
 
@@ -40,7 +40,7 @@ export class SenderKeyMessage extends CiphertextMessage {
       const version =
         (((this.CURRENT_VERSION << 4) | this.CURRENT_VERSION) & 0xff) % 256;
 
-      const ciphertextBuffer = Buffer.from(ciphertext!); // Força a existência
+      const ciphertextBuffer = Buffer.from(ciphertext!); // Forï¿½a a existï¿½ncia
 
       const message = protobufs.SenderKeyMessage.encode(
         protobufs.SenderKeyMessage.create({
